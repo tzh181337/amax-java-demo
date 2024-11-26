@@ -5,7 +5,7 @@ public class AmaxJavaDemo {
         Rpc rpc = new Rpc("https://******");
         ChainInfo info = rpc.getChainInfo();
 
-        Tx tx = mgpBlockInfo().getTx();
+        Tx tx = info().getTx();
         List<TxAction> actions = new ArrayList();
         tx.setActions(actions);
         Map<String, Object> map = new LinkedHashMap();
