@@ -2,7 +2,9 @@
 public class AmaxJavaDemo {
     public static void main(String[] args) throws Exception {
 
-        ChainInfo info = mgpBlockInfo().getInfo();
+        Rpc rpc = new Rpc("https://******");
+        ChainInfo info = rpc.getChainInfo();
+
         Tx tx = mgpBlockInfo().getTx();
         List<TxAction> actions = new ArrayList();
         tx.setActions(actions);
